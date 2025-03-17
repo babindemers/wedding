@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
 
-export const Faq = () => {
+export const FAQ = () => {
   return (
     <Container className="!p-0">
       <div className="w-full max-w-2xl p-2 mx-auto rounded-2xl">
@@ -17,7 +17,7 @@ export const Faq = () => {
                     <span>{item.question}</span>
                     <ChevronUpIcon
                       className={`${
-                        open ? "transform rotate-180" : ""
+                        open ? "" : "transform rotate-180"
                       } w-5 h-5 text-indigo-500`}
                     />
                   </DisclosureButton>
@@ -36,21 +36,41 @@ export const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Y a-t-il un « dress code » à respecter?",
+    answer: "Rien de strict ! On veut que vous soyez chic, mais surtout à l'aise. La cérémonie se déroulera dehors (si dame nature le permet), sur du gazon… donc attention aux talons aiguilles qui pourraient s'enfoncer ! Le 2 août risque d'être chaud, alors mieux vaut éviter les tenues trop étouffantes si le soleil est au rendez-vous.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "À quelle heure arriver au Eastman Club?",
+    answer: "Vous pouvez arriver sur le site à partir de 15h, le temps de profiter du cadre enchanteur et de prendre place tranquillement. La cérémonie commencera officiellement à 16h… et, pour une fois, on va essayer d 'être à l 'heure!  Alors, ne nous suivez pas dans nos mauvaises habitudes et soyez là à temps!",
   },
   {
-    question: "What is your refund policy? ",
+    question: "Qu 'arrive-t-il en cas de pluie?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Si la météo décide de jouer les trouble-fêtes, on a un plan B tout aussi magique. La cérémonie aura lieu à l 'intérieur et vous serez ensuite invités à la seconde salle de réception pour le cocktail, le temps qu 'on prépare la salle pour le repas. La salle de jeux et le bar au sous-sol seront aussi à votre disposition pour vous amuser tout en restant au sec.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Dois-je prévoir de l'argent pour le bar?",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Bonne nouvelle : nous prenons soin de vos verres toute la soirée!  De fabuleux barmans s 'occuperont de vous pendant le cocktail et jusqu'à 21h. Si le cœur vous en dit, un pourboire pour les remercier de leur talent est toujours apprécié. Après 21h, le bar passe en mode *self-service*. Au menu : vin, cocktail, seltzer, mocktails (et sûrement quelques shotguns…). Cheers! *Notez que vous pouvez apporter votre propre alcool si vous le souhaitez.*",
+  },
+  {
+    question: "Est-ce qu 'il y a un registre de cadeaux?",
+    answer:
+      "Votre présence à nos côtés est déjà un merveilleux cadeau pour nous! Comme nous avons déjà tout ce qu 'il nous faut à la maison, nous n 'avons pas de registre cadeaux. Si vous le souhaitez, vous pouvez nous gâter avec une contribution à notre voyage de noces en Scandinavie. Un espace sera prévu à cet effet dans la salle de réception.",
+  },
+  {
+    question: "Comment se rendre au Eastman Club?",
+    answer:
+      "L 'adresse exacte est 400 Chemin George-Bonnallie, Eastman (QC) J0E 1P0 et pour éviter toute tentative d 'exploration imprévue des forêts des Cantons-de-l'Est, on vous conseille de bien entrer la destination dans votre GPS avant de partir.",
+  },
+  {
+    question: "Y a-t-il du stationnement sur place ainsi que des bornes de recharges?",
+    answer:
+      "Il y a largement de quoi stationner toutes les voitures. À votre arrivée, des personnes vous guideront pour optimiser l'espace, surtout pour ceux qui ne restent pas dormir. Pour les voitures électriques, deux bornes Tesla sont disponibles. Faites-nous signe si vous comptez les utiliser!",
+  },
+  {
+    question: "Que faut-il prévoir si nous dormons sur place?",
+    answer:
+      "Vous prolongez la fête avec nous jusqu 'au déjeuner du lendemain? Yeay! Toutes les chambres sont équipées de literie et serviettes, donc vous n 'aurez besoin que de vos effets personnels. Si vous campez en tente, roulotte ou van, les salles de bains seront accessibles, mais veillez à apporter vos serviettes si vous souhaitez vous doucher. À votre arrivez, veuillez garder vos baggages dans votre voiture. Vous aurez suffisamment de temps après la cérémonie pour trouver votre chambre et vous y installer avant la réception. *Pssst.. si jamais l 'envie vous prend de vous rafraîchir, une piscine creusée et des jacuzzis sont à votre disposition! N 'oubliez pas de mettre votre maillot de bain dans votre valise!"
   },
 ];

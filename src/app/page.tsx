@@ -1,57 +1,51 @@
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
-import { Benefits } from "@/components/Benefits";
-import { Video } from "@/components/Video";
-import { Testimonials } from "@/components/Testimonials";
-import { Faq } from "@/components/Faq";
-import { Cta } from "@/components/Cta";
 
-import { benefitOne, benefitTwo } from "@/components/data";
+import { Schedule } from "@/components/Schedule";
+import { Accommodations } from "@/components/Accommodations";
+import { Story } from "@/components/Story";
+import { FAQ } from "@/components/FAQ";
+import { CompleteForm } from "@/components/CompleteForm";
+
 export default function Home() {
   return (
-    <Container>
+    <Container className="full-width">
+      {/* Intro */}
       <Hero />
-      <SectionTitle
-        preTitle="Nextly Benefits"
-        title=" Why should you use this landing page"
-      >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+
+      {/* Horaire */}
+      <Container className="bg-gray-100 full-width">
+        <SectionTitle id="horaire" preTitle="Horaire" title="À quoi s'attendre?">
+          La cérémonie prendra place à 15h et sera suivie d'un cocktail où vous
+          pourrez profiter des installations avant la réception prévue pour 17h!
+        </SectionTitle>
+        <Schedule />
+      </Container>
+
+      {/* Hébergement */}
+      <SectionTitle id="hébergement" preTitle="Hébergement" title="Profitez de votre séjour en Estrie">
+        Nous sommes heureux de vous accueillir au Eastman Club pour la cérémonie
+        et pour la nuit! L'entièreté du site est privatisé, laissant la chance
+        à tous nos invités de profiter du séjour en Estrie avec nous sans souci. 
       </SectionTitle>
+      <Accommodations />
 
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+      {/* Notre histoire */}
+      <Container className="bg-gray-100 full-width">
+        <SectionTitle id="notre-histoire" preTitle="Notre histoire" title="10 ans déjà, voici un petit résumé."/>
+        <Story/>
+      </Container>
 
-      <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
-      >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+      {/* FAQ */}
+      <SectionTitle id="faq" preTitle="FAQ" title="Questions fréquentes">
+        Voici quelques questions que nous avons reçues jusqu'à présent.
+        N'hésitez pas à nous contacter pour toutes autres interrogations.
       </SectionTitle>
+      <FAQ />
 
-      <Video videoId="fZ0D0cnR88E" />
-
-      <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-
-      <Testimonials />
-
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-
-      <Faq />
-      <Cta />
+      {/* Formulaire */}
+      <CompleteForm />
     </Container>
   );
 }
