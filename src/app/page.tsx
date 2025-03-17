@@ -16,8 +16,8 @@ export default function Home() {
 
       {/* Horaire */}
       <Container className="bg-gray-100 full-width">
-        <SectionTitle id="horaire" preTitle="Horaire" title="À quoi s `&apos;`attendre?">
-          La cérémonie prendra place à 15h et sera suivie d `&apos;`un cocktail où vous
+        <SectionTitle id="horaire" preTitle="Horaire" title="À quoi s&apos;attendre?">
+          La cérémonie prendra place à 15h et sera suivie d&apos;un cocktail où vous
           pourrez profiter des installations avant la réception prévue pour 17h!
         </SectionTitle>
         <Schedule />
@@ -26,7 +26,7 @@ export default function Home() {
       {/* Hébergement */}
       <SectionTitle id="hébergement" preTitle="Hébergement" title="Profitez de votre séjour en Estrie">
         Nous sommes heureux de vous accueillir au Eastman Club pour la cérémonie
-        et pour la nuit! L`&apos;`entièreté du site est privatisé, laissant la chance
+        et pour la nuit! L&apos;entièreté du site est privatisé, laissant la chance
         à tous nos invités de profiter du séjour en Estrie avec nous sans souci. 
       </SectionTitle>
       <Accommodations />
@@ -39,8 +39,8 @@ export default function Home() {
 
       {/* FAQ */}
       <SectionTitle id="faq" preTitle="FAQ" title="Questions fréquentes">
-        Voici quelques questions que nous avons reçues jusqu `&apos;`à présent.
-        N `&apos;`hésitez pas à nous contacter pour toutes autres interrogations.
+        Voici quelques questions que nous avons reçues jusqu&apos;à présent.
+        N&apos;hésitez pas à nous contacter pour toutes autres interrogations.
       </SectionTitle>
       <FAQ />
 
