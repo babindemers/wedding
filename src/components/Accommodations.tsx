@@ -68,7 +68,7 @@ export const Accommodations = () => {
                     </h3>
 
                     <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
-                        Pour les personnes souhaitant dormir à l'hôtel, voici quelques options offertes dans un rayon d'environ 20 minutes du Eastman Club:
+                        Pour les personnes souhaitant dormir à l`&apos;`hôtel, voici quelques options offertes dans un rayon d`&apos;`environ 20 minutes du Eastman Club:
                     </p>
                 </div>
 

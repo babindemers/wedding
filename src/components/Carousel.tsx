@@ -34,7 +34,7 @@ const Carousel = () => {
       <div className="relative w-full max-w-3xl mx-auto overflow-hidden rounded-lg">
         {/* Image Container */}
         <div className="relative h-64 md:h-96 w-full">
-          <AnimatePresence mode="automatic">
+          <AnimatePresence mode="wait">
             <motion.div
               key={index}
               initial={{ opacity: 0, x: 50 }}

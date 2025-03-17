@@ -7,7 +7,7 @@ export const CompleteForm = () => {
       <div className="flex flex-wrap items-center justify-between w-full max-w-4xl gap-5 mx-auto text-white bg-logoColor px-7 py-7 lg:px-12 lg:py-12 lg:flex-nowrap rounded-xl">
         <div className="flex-grow text-center lg:text-left">
           <h2 className="text-xl font-medium lg:text-3xl">
-            Votre présence n'est pas confirmée?
+            Votre présence n`&apos;`est pas confirmée?
           </h2>
           <p className="mt-2 font-medium text-gray-300 text-opacity-90 lg:text-xl">
             Complétez le formulaire dès maintenant!
