@@ -10,12 +10,12 @@ import { CompleteForm } from "@/components/CompleteForm";
 
 export default function Home() {
   return (
-    <Container className="full-width">
+    <div className="full-width pt-20">
       {/* Intro */}
       <Hero />
 
       {/* Horaire */}
-      <Container className="bg-gray-100 full-width">
+      <Container className="bg-gray-100 full-width !p-0">
         <SectionTitle id="horaire" preTitle="Horaire" title="À quoi s&apos;attendre?">
           La cérémonie prendra place à 15h et sera suivie d&apos;un cocktail où vous
           pourrez profiter des installations avant la réception prévue pour 17h!
@@ -32,8 +32,8 @@ export default function Home() {
       <Accommodations />
 
       {/* Notre histoire */}
-      <Container className="bg-gray-100 full-width">
-        <SectionTitle id="notre-histoire" preTitle="Notre histoire" title="10 ans déjà, voici un petit résumé."/>
+      <Container className="bg-gray-100 full-width !p-0">
+        <SectionTitle id="notre-histoire" preTitle="Notre histoire" title="10 ans déjà, voici un petit résumé"/>
         <Story/>
       </Container>
 
@@ -46,6 +46,6 @@ export default function Home() {
 
       {/* Formulaire */}
       <CompleteForm />
-    </Container>
+    </div>
   );
 }
