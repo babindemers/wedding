@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 
-import ceremonyImg from "../../public/img/cérémonie.png";
-import receptionImg from "../../public/img/réception.png";
-import brunchImg from "../../public/img/brunch.png";
+import ceremonyImg from "../../public/img/horaire/cérémonie.png";
+import receptionImg from "../../public/img/horaire/réception.png";
+import brunchImg from "../../public/img/horaire/brunch.png";
 
 export const Schedule = () => {
   return (

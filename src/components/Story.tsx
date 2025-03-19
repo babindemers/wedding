@@ -5,11 +5,34 @@ import Carousel from "@/components/Carousel";
 
 import highSchoolImg from "../../public/img/notre-histoire/1-saint-alex.png";
 import partyImg from "../../public/img/notre-histoire/2-party.png";
+
 import graduation2016Img from "../../public/img/notre-histoire/3-graduation-2016.png";
+import movingOutImg from "../../public/img/notre-histoire/4-demenagement.png";
+import roommatesImg from "../../public/img/notre-histoire/5-colocs.png";
+import graduationKarinaImg from "../../public/img/notre-histoire/6-graduation-karina.png";
+import condoImg from "../../public/img/notre-histoire/7-condo.png";
+import graduationWillImg from "../../public/img/notre-histoire/8-graduation-will.png";
+import italyImg from "../../public/img/notre-histoire/9-italie.png";
+import owlsHeadImg from "../../public/img/notre-histoire/10-owls-head.png";
+import danikaOliImg from "../../public/img/notre-histoire/11-danika-oli.png";
+import danikaAlexeImg from "../../public/img/notre-histoire/12-danika-alexe.png";
+
+const carouselImages = [
+  { src: graduation2016Img, alt: "Graduation 2016" },
+  { src: movingOutImg, alt: "Déménagement" },
+  { src: roommatesImg, alt: "Colocs" },
+  { src: graduationKarinaImg, alt: "Graduation Karina" },
+  { src: condoImg, alt: "Condo" },
+  { src: graduationWillImg, alt: "Graduation Will" },
+  { src: italyImg, alt: "Italie" },
+  { src: owlsHeadImg, alt: "Owl's Head" },
+  { src: danikaOliImg, alt: "Danika et Olivier" },
+  { src: danikaAlexeImg, alt: "Danika et Alexe" },
+];
 
 export const Story = () => {
   return (
-    <Container className="flex w-full flex-col items-center justify-left text-justify">
+    <Container className="flex w-full flex-col items-center justify-left text-justify !p-0">
       <div className="max-w-5xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl space-y-8">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           <p className="md:w-2/3">
@@ -87,12 +110,10 @@ export const Story = () => {
           <br/><br/>
 
           <i><b>Fun fact:</b> Leurs frères et sœurs se sont rencontrés avant eux ! Danika et Olivier en 2011 à la finale provinciale
-          d&apos;Expo-Sciences, puis Alexandra et Danika au cégep entre 2014 et 2016.*</i>
+          d&apos;Expo-Sciences, puis Alexandra et Danika au cégep entre 2014 et 2016.</i>
         </p>
 
-        <Carousel />
-        
-
+        <Carousel images={ carouselImages } />
       </div>
     </Container>
   );

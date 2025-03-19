@@ -24,8 +24,8 @@ export default function Home() {
       </Container>
 
       {/* Hébergement */}
-      <SectionTitle id="hébergement" preTitle="Hébergement" title="Profitez de votre séjour en Estrie">
-        Nous sommes heureux de vous accueillir au Eastman Club pour la cérémonie
+      <SectionTitle id="hébergement" preTitle="Hébergement" title="Profitez d'un séjour en Estrie">
+        Il nous fait plaisir de vous accueillir au Eastman Club pour la cérémonie
         et pour la nuit! L&apos;entièreté du site est privatisé, laissant la chance
         à tous nos invités de profiter du séjour en Estrie avec nous sans souci. 
       </SectionTitle>
