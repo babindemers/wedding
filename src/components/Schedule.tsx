@@ -12,7 +12,7 @@ export const Schedule = () => {
       <div className="grid gap-10 xl:grid-cols-3">
         <div className="col-auto">
           <div className="flex flex-col w-full h-full bg-white p-10 rounded-2xl">
-          <Avatar
+          <Event
               image={ceremonyImg}
               name="Cérémonie"
               title="Samedi - 15h"
@@ -21,7 +21,7 @@ export const Schedule = () => {
         </div>
         <div className="">
           <div className="flex flex-col w-full h-full bg-white p-10 rounded-2xl">
-            <Avatar
+            <Event
               image={receptionImg}
               name="Réception"
               title="Samedi - 17h"
@@ -30,7 +30,7 @@ export const Schedule = () => {
         </div>
         <div className="">
           <div className="flex flex-col w-full h-full bg-white p-10 rounded-2xl">
-            <Avatar
+            <Event
               image={brunchImg}
               name="Brunch"
               title="Dimanche - 9h"
@@ -42,13 +42,13 @@ export const Schedule = () => {
   );
 };
 
-interface AvatarProps {
+interface EventProps {
   image: any;
   name: string;
   title: string;
 }
 
-function Avatar(props: Readonly<AvatarProps>) {
+function Event(props: Readonly<EventProps>) {
   return (
     <div className="flex items-end space-x-8">
       <div className="flex-shrink-0 overflow-hidden w-24 h-24">
@@ -56,7 +56,7 @@ function Avatar(props: Readonly<AvatarProps>) {
           src={props.image}
           width="96"
           height="96"
-          alt="Avatar"
+          alt="Event"
           placeholder="blur"
         />
       </div>

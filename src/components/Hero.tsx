@@ -23,11 +23,11 @@ export const Hero = () => {
             <h1 className="text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:text-3xl lg:leading-tight xl:text-4xl xl:leading-tight text-center">
               On se marie (wahooo) et on est heureux de vous accueillir au Eastman Club pour célébrer avec nous!
             </h1>
-            <p className="pt-8 text-l leading-normal text-gray-500 lg:text-xl xl:text-2xl text-center">
+            <p className="p-4 text-l leading-normal text-gray-500 lg:text-xl xl:text-2xl text-center">
               2 août 2025
             </p>
-            <p className="text-l leading-normal text-gray-400 xl:text-lg text-center">
-              400 Ch. George-Bonnallie, Eastman, QC
+            <p  className="text-l leading-normal text-gray-400 xl:text-lg text-center">
+              <a href="https://maps.app.goo.gl/bujr7eHEChTrc7TX7">400 Ch. George-Bonnallie, Eastman, QC</a>
             </p>
           </div>
         </div>

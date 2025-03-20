@@ -12,17 +12,17 @@ interface CarouselProps {
 const Carousel: React.FC<CarouselProps> = ({ images = [] }) => {
     const [index, setIndex] = useState(0);
 
-    if (!images || images.length === 0) {
-      return <div className="text-center p-4">No images available</div>;
-    }
-
     const prevSlide = () => setIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
     const nextSlide = () => setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
 
-    // Auto-scroll effect
     useEffect(() => {
-        const interval = setInterval(nextSlide, 7000); 
-        return () => clearInterval(interval); 
+      if (images.length === 0) return;
+      
+      const interval = setInterval(() => {
+        setIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+      }, 7000);
+    
+      return () => clearInterval(interval);
     }, [images.length]);
 
     return (
