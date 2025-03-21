@@ -14,7 +14,8 @@ export const Hero = () => {
               height="1284"
               className={"object-cover"}
               alt="Hero Illustration"
-              placeholder="blur"
+              priority
+              loading="eager"
             />
           </div>
         </div>

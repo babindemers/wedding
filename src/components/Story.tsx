@@ -32,7 +32,7 @@ const carouselImages = [
 
 export const Story = () => {
   return (
-    <Container className="flex w-full flex-col items-center justify-left text-justify !p-0">
+    <Container className="flex w-full flex-col items-center justify-left text-justify !py-0">
       <div className="max-w-5xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl space-y-8">
         <div className="flex flex-col md:flex-row items-center md:items-start">
           <p className="md:w-2/3">
@@ -52,11 +52,12 @@ export const Story = () => {
             alt="Groupe 442"
             width={400}
             height={500}
-            className="ml-4 mb-4 md:mb-0 float-left md:float-none"
+            className="m-4 md:mb-0"
           />
         </div>
 
-        <p>
+        
+        <p className="!mt-0">
           Rien ne laissait présager une grande romance. Karina trouvait William pas mal beau
           avec ses grands yeux bleu brillants, mais restait méfiante face au spécimen de
           « hockey boy » qui ont une mauvaise réputation. De son côté, William n&apos;avait pas eu 
@@ -73,13 +74,13 @@ export const Story = () => {
           du fait qu&apos;elle vient de déclencher une tempête intérieure chez son voisin de bureau.
         </p>
 
-        <div className="flex flex-col md:flex-row items-center md:items-start">
+        <div className="flex flex-col md:flex-row items-center md:items-start !mt-0">
           <Image
             src={partyImg}
             alt="Réception"
             width={400}
             height={500}
-            className="mr-4 mb-4 md:mb-0 float-right md:float-none"
+            className="m-4 md:mb-0"
           />
           <p>
             Petit à petit, les deux amis commencent à se parler en classe et le midi, à partager leurs notes de

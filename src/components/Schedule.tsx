@@ -57,7 +57,8 @@ function Event(props: Readonly<EventProps>) {
           width="96"
           height="96"
           alt="Event"
-          placeholder="blur"
+          priority
+          loading="eager"
         />
       </div>
       <div>

@@ -6,26 +6,30 @@ import Carousel from "@/components/Carousel";
 
 import eastmanClubImg from "../../public/img/hébergement/eastman-club/site.png";
 import bedroomImg from "../../public/img/hébergement/eastman-club/chambre.png";
+import doubleBedroomImg from "../../public/img/hébergement/eastman-club/chambre-double.png";
 import livingRoomImg from "../../public/img/hébergement/eastman-club/salon.png";
 import poolImg from "../../public/img/hébergement/eastman-club/piscine.png";
 
-import magogImg from "../../public/img/hébergement/estrie/magog.jpg";
-import estrimontImg from "../../public/img/hébergement/estrie/estrimont.jpg";
-import vetendreImg from "../../public/img/hébergement/estrie/vertendre.jpg";
-import lacImg from "../../public/img/hébergement/estrie/lac.jpg";
+import estrimontImg from "../../public/img/hébergement/estrie/estrimont.png";
+import manoirDesSablesImg from "../../public/img/hébergement/estrie/manoir-des-sables.png";
+import quartierDesMarinasImg from "../../public/img/hébergement/estrie/quartier-des-marinas.png";
+import valleaImg from "../../public/img/hébergement/estrie/vallea.png";
+import vertendreImg from "../../public/img/hébergement/estrie/vertendre.png";
 
 const eastmanClubImages = [
     { src: eastmanClubImg, alt: "Eastman Club" },
-    { src: bedroomImg, alt: "Chambre de l'Ensoleillé" },
-    { src: livingRoomImg, alt: "Salon de l'Intime" },
+    { src: bedroomImg, alt: "Chambre simple" },
+    { src: doubleBedroomImg, alt: "Chambre double" },
+    { src: livingRoomImg, alt: "Salon" },
     { src: poolImg, alt: "Piscine" },
 ];
 
 const estrieImages = [
-    { src: magogImg, alt: "Magog" },
     { src: estrimontImg, alt: "Estrimont" },
-    { src: vetendreImg, alt: "Le Vertendre" },
-    { src: lacImg, alt: "Lac Memphrémagog" },
+    { src: manoirDesSablesImg, alt: "Manoir des Sables" },
+    { src: quartierDesMarinasImg, alt: "Quartier des Marinas" },
+    { src: valleaImg, alt: "Hôtel Vallea" },
+    { src: vertendreImg, alt: "Le Vertendre" },
 ];
 
 import { PiMountains, PiWaves, PiSunHorizon } from "react-icons/pi";
@@ -36,11 +40,11 @@ export const Accommodations = () => {
         {/* Eastman Club */}
         <div className="flex flex-wrap mb-8 lg:gap-10 lg:flex-nowrap">
             <div className="flex items-center justify-center w-full lg:w-1/2">
-                <Carousel images={eastmanClubImages} />
+                <Carousel images={eastmanClubImages} autoPlay={true} interval={5000}/>
             </div>
 
             <div className="flex flex-wrap w-full lg:w-1/2">
-                <div className="flex flex-col w-full p-4">
+                <div className="flex flex-col w-full px-8">
                     <h3 className="max-w-2xl my-3 text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
                         Dormir au Eastman Club
                     </h3>
@@ -67,11 +71,11 @@ export const Accommodations = () => {
         {/* Estrie */}
         <div className="flex flex-wrap mb-8 lg:gap-10 lg:flex-nowrap">
             <div className="flex items-center justify-center w-full lg:w-1/2 lg:order-1">
-                <Carousel images={estrieImages} />
+                <Carousel images={estrieImages} autoPlay={true} interval={5000}/>
             </div>
 
             <div className="flex flex-wrap w-full lg:w-1/2 lg:justify-end">
-                <div className="flex flex-col w-full p-4">
+                <div className="flex flex-col w-full px-8">
                     <h3 className="max-w-2xl my-3 text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
                         Dormir en Estrie
                     </h3>

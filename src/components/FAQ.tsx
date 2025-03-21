@@ -30,8 +30,8 @@ const faqSections = [
       {
         question: "À quelle heure arriver au Eastman Club?",
         answer:
-          "Vous pouvez arriver sur le site à partir de 15h, le temps de profiter du cadre enchanteur et de " +
-          "prendre place tranquillement. La cérémonie commencera officiellement à 16h… et, pour une fois, on va essayer d'être à l'heure!",
+          "Vous pouvez arriver sur le site à partir de 14h, le temps de profiter du cadre enchanteur et de " +
+          "prendre place tranquillement. La cérémonie commencera officiellement à 15h… et, pour une fois, on va essayer d'être à l'heure!",
         image: arrivalImg,
       },
       {
@@ -103,7 +103,7 @@ const faqSections = [
 export const FAQ = () => {
   return (
     <Container className="!p-0">
-      <div className="w-full max-w-4xl p-4 mx-auto rounded-2xl">
+      <div className="w-full max-w-4xl mx-auto rounded-2xl px-8">
         {faqSections.map((section, sectionIndex) => (
           <div key={section.title} className="mb-10">
             {/* Section Title */}
@@ -140,7 +140,7 @@ const FAQItem = ({ item }: { item: { question: string; answer: string; image: an
             {/* Image (Only displayed when expanded) */}
             {open && (
               <div className="flex-shrink-0 w-24 h-24">
-                <Image src={item.image} width="96" height="96" alt={item.question} placeholder="blur" />
+                <Image src={item.image} width="96" height="96" alt={item.question} loading="eager"/>
               </div>
             )}
             {/* Answer with HTML rendering */}

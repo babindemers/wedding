@@ -11,3 +11,12 @@ html {
   scroll-padding-top: 80px; /* Adjust based on navbar height */
 }
 
+:root {
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}

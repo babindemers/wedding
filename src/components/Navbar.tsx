@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
@@ -31,9 +32,12 @@ export const Navbar = () => {
 
         <div className="gap-3 nav__item mr-2 lg:flex ml-auto lg:ml-0 lg:order-2">
           <div className="mr-3 lg:flex nav__item">
-            <Link href="/" className="px-6 py-2 text-white bg-logoColor rounded-lg md:ml-5">
+            <button
+              data-tally-open="mDMArl" data-tally-layout="modal" data-tally-emoji-text="🥂" data-tally-emoji-animation="wave"
+              className="px-6 py-2 text-white bg-logoColor rounded-lg md:ml-5"
+            >
               RSVP
-            </Link>
+            </button>
           </div>
         </div>
 
