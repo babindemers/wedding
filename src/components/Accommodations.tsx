@@ -36,15 +36,15 @@ import { PiMountains, PiWaves, PiSunHorizon } from "react-icons/pi";
 
 export const Accommodations = () => {
   return (
-    <Container className="!p-0">
+    <Container className="!py-0 !px-8">
         {/* Eastman Club */}
         <div className="flex flex-wrap mb-8 lg:gap-10 lg:flex-nowrap">
-            <div className="flex items-center justify-center w-full lg:w-1/2">
+            <div className="flex items-center justify-center w-full lg:w-1/2 lg:pr-10">
                 <Carousel images={eastmanClubImages} autoPlay={true} interval={5000}/>
             </div>
 
             <div className="flex flex-wrap w-full lg:w-1/2">
-                <div className="flex flex-col w-full px-8">
+                <div className="flex flex-col w-full">
                     <h3 className="max-w-2xl my-3 text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
                         Dormir au Eastman Club
                     </h3>
@@ -71,12 +71,12 @@ export const Accommodations = () => {
 
         {/* Estrie */}
         <div className="flex flex-wrap mb-8 lg:gap-10 lg:flex-nowrap">
-            <div className="flex items-center justify-center w-full lg:w-1/2 lg:order-1">
+            <div className="flex items-center justify-center w-full lg:w-1/2 lg:order-1 lg:pl-10">
                 <Carousel images={estrieImages} autoPlay={true} interval={5000}/>
             </div>
 
             <div className="flex flex-wrap w-full lg:w-1/2 lg:justify-end">
-                <div className="flex flex-col w-full px-8">
+                <div className="flex flex-col w-full">
                     <h3 className="max-w-2xl my-3 text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:leading-tight lg:text-3xl">
                         Dormir en Estrie
                     </h3>

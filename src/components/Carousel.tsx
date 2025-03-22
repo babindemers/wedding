@@ -17,7 +17,7 @@ interface CarouselProps {
 
 const Carousel: React.FC<CarouselProps> = ({ images = [], autoPlay = true, interval = 7000 }) => {
   return (
-    <div className="relative w-full max-w-3xl h-full mx-auto overflow-hidden rounded-lg px-8">
+    <div className="relative w-full max-w-3xl h-full mx-auto overflow-hidden rounded-lg ">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={10}

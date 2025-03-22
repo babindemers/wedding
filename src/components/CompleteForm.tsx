@@ -11,7 +11,7 @@ export const CompleteForm = () => {
           <h2 className="text-xl font-medium md:text-2xl">
             Votre présence n&apos;est pas confirmée?
           </h2>
-          <p className="font-medium text-gray-300 text-opacity-90 md:text-xl">
+          <p className="font-medium text-gray-300 text-opacity-90 text-lg md:text-xl">
             Complétez le formulaire dès maintenant!
           </p>
         </div>

@@ -144,7 +144,7 @@ const FAQItem = ({ item }: { item: { question: string; answer: string; image: an
               </div>
             )}
             {/* Answer with HTML rendering */}
-            <p className="flex-1" dangerouslySetInnerHTML={{ __html: item.answer }} />
+            <p className="flex-1 text-lg" dangerouslySetInnerHTML={{ __html: item.answer }} />
           </DisclosurePanel>
         </div>
       )}
