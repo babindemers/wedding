@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="../../public/favicon.ico" />
+        <link rel="icon" href="favicon.ico" />
         <script async src="https://tally.so/widgets/embed.js"></script>
       </head>
       <body className={inter.className}>
