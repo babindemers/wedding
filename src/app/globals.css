@@ -9,14 +9,23 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px; /* Adjust based on navbar height */
+  background-color: #ffffff !important; /* Force light background */
+  color: #000000 !important; /* Force light text */
 }
 
+/* Ensure the root color scheme stays light */
 :root {
-  color-scheme: light;
+  color-scheme: light !important;
+  --swiper-theme-color: #dddddd !important; /* Force light text for Swiper */
 }
 
+/* Override dark mode preferences globally */
 @media (prefers-color-scheme: dark) {
   :root {
-    color-scheme: light;
+    color-scheme: light !important;
+  }
+  html {
+    background-color: #ffffff !important;
+    color: #000000 !important;
   }
 }

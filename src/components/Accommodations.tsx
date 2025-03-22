@@ -51,17 +51,18 @@ export const Accommodations = () => {
 
                     <p className="max-w-2xl text-lg leading-normal text-gray-500 lg:text-xl text-justify">
                         Le Eastman Club offre 100 places pour dormir dans 32 chambres
-                        distinctes. Les trois chalets du site comporte plusieurs salles
+                        distinctes. Les trois chalets du site comportent plusieurs salles
                         de bain rénovées, assurant ainsi confort et intimité pour chaque invité.
                         <br/><br/>
 
                         Si vous souhaitez dormir sur place, il nous fera plaisir de
-                        vous attribuer une chambre qui répondra à vos besoins. Nous 
+                        vous attribuer une chambre sans frais. Nous 
                         assignerons les chambres en fonction de la configuration de
                         celles-ci (nombre de lits, taille) et des personnes à proximité
                         pour assurer votre confort. Un déjeuner sera servi le dimanche
                         matin avant le départ du site prévu pour 11 h. Référez-vous à
-                        la FAQ pour savoir quoi apporter pour votre nuit au Eastman Club.
+                        la section <a href="#faq" className="underline">FAQ</a> pour 
+                        savoir quoi apporter pour votre nuit au Eastman Club.
                     </p>
                 </div>
             </div>

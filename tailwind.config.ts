@@ -5,6 +5,7 @@ const colors = require("tailwindcss/colors");
 
 const config: Config = {
   mode: "jit",
+  darkMode: "class", // Disable dark mode completely
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -27,4 +28,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

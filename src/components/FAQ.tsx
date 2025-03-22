@@ -52,17 +52,17 @@ const faqSections = [
         question: "Dois-je prévoir de l'argent pour le bar?",
         answer:
           "Bonne nouvelle : nous prenons soin de vos verres toute la soirée!  De fabuleux barmans s'occuperont de vous " + 
-          "pendant le cocktail et jusqu'à 21h. Si le cœur vous en dit, un pourboire pour les remercier de leur talent est " +
+          "pendant le cocktail et jusqu'à 21h. Si le cœur vous en dit, un pourboire pour les remercier de leur talent sera " +
           "toujours apprécié. Après 21h, le bar passe en mode <i>self-service</i>. Au menu : vin, cocktail, seltzer, mocktails " +
-          "(et sûrement quelques shotguns…). Cheers!<br/><br/> <i>Notez que vous pouvez apporter votre propre alcool si vous le souhaitez.</i>",
+          "(et sûrement quelques shotguns…). Cheers!",
         image: barImg,
       },
       {
         question: "Est-ce qu'il y a un registre de cadeaux?",
         answer:
           "Votre présence à nos côtés est déjà un merveilleux cadeau pour nous! Comme nous avons déjà tout ce qu'il nous faut " +
-          "à la maison, nous n'avons pas de registre cadeaux. Si vous le souhaitez, vous pouvez nous gâter avec une contribution " +
-          "à notre voyage de noces en Scandinavie. Un espace sera prévu à cet effet dans la salle de réception.",
+          "à la maison, nous n'avons pas de registre de cadeaux. Si vous le souhaitez, vous pouvez nous gâter avec une contribution " +
+          "à notre voyage de noces en Scandinavie. Un espace sera prévu à cet effet dans la salle de réception, ou vous pouvez faire un transfert au 819-923-3062.",
         image: giftImg,
       },
     ],
@@ -82,18 +82,18 @@ const faqSections = [
         answer:
           "Il y a suffisamment d'espace pour se stationner sur le site. À votre arrivée, des personnes vous guideront pour optimiser " +
           "l'espace. Pour les voitures électriques, deux bornes Tesla sont disponibles. " +
-          "Si vous comptez les utiliser, assurez-vous de l'indiquer au formulaire de participation.",
+          "Si vous comptez les utiliser, assurez-vous de l'indiquer dans le formulaire de participation.",
         image: parkingImg,
       },
       {
         question: "Que faut-il prévoir si nous dormons sur place?",
         answer:
-          "Vous prolongez la fête avec nous jusqu'au déjeuner du lendemain? Yeay! Toutes les chambres sont équipées de literie et " +
-          "serviettes, donc vous n'aurez besoin que de vos effets personnels. Si vous campez en tente, roulotte ou van, les salles " +
-          "de bains seront accessibles, mais veillez à apporter vos serviettes si vous souhaitez vous doucher. À votre arrivez, veuillez " +
+          "Vous prolongez la fête avec nous jusqu'au brunch du lendemain? Yeay! Les chambres sont offertes sans frais et sont équipées de literie et " +
+          "de serviettes, donc vous n'aurez besoin que de vos effets personnels. Si vous campez en tente, roulotte ou van, les salles " +
+          "de bains seront accessibles, mais veillez à apporter vos serviettes si vous souhaitez vous doucher. À votre arrivée, veuillez " +
           "garder vos baggages dans votre voiture. Vous aurez suffisamment de temps après la cérémonie pour trouver votre chambre et vous " +
-          "y installer avant la réception.<br/><br/> <i>Pssst.. si jamais l'envie vous prend de vous rafraîchir, une piscine creusée et des jacuzzis " +
-          "sont à votre disposition! N'oubliez pas de mettre votre maillot de bain dans votre valise!</i>",
+          "y installer avant la réception.<br/><br/> <i>Pssst.. si jamais l'envie vous prenait de vous rafraîchir, une piscine creusée et des jacuzzis " +
+          "seront à votre disposition! N'oubliez pas de mettre votre maillot de bain dans votre valise!</i>",
         image: overnightImg,
       },
     ],
@@ -132,14 +132,14 @@ const FAQItem = ({ item }: { item: { question: string; answer: string; image: an
     <Disclosure>
       {({ open }) => (
         <div className="mb-5">
-          <DisclosureButton className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100 focus:outline-none focus-visible:ring focus-visible:ring-indigo-100 focus-visible:ring-opacity-75">
+          <DisclosureButton className="flex items-center justify-between w-full px-4 py-4 text-lg text-left text-gray-800 rounded-lg bg-gray-50 hover:bg-gray-100">
             <span>{item.question}</span>
-            <ChevronUpIcon className={`${open ? "" : "transform rotate-180"} w-5 h-5 text-indigo-500`} />
+            <ChevronUpIcon className={`${open ? "" : "transform rotate-180"} w-5 h-5 text-gray-400`} />
           </DisclosureButton>
           <DisclosurePanel className="px-4 pt-4 pb-2 flex items-start gap-4 text-gray-500">
             {/* Image (Only displayed when expanded) */}
             {open && (
-              <div className="flex-shrink-0 w-24 h-24">
+              <div className="flex-shrink-0 w-16 h-16 md:w-24 md:h-24">
                 <Image src={item.image} width="96" height="96" alt={item.question} loading="eager"/>
               </div>
             )}

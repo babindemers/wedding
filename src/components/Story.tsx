@@ -59,8 +59,8 @@ export const Story = () => {
         
         <p className="!mt-0">
           Rien ne laissait présager une grande romance. Karina trouvait William pas mal beau
-          avec ses grands yeux bleu brillants, mais restait méfiante face au spécimen de
-          « hockey boy » qui ont une mauvaise réputation. De son côté, William n&apos;avait pas eu 
+          avec ses grands yeux bleu brillants, mais restait méfiante face au spécimen des
+          « hockey boys » qui ont une mauvaise réputation. De son côté, William n&apos;avait pas eu 
           de révélation instantanée… jusqu&apos;au printemps. Petit à petit, leurs groupes d&apos;amis
           respectifs commencent à fusionner. Puis, la fête de William le 13 mars, en grand 
           geste de générosité, Karina lui offre… les kiwis de son lunch. Une semaine plus 
@@ -114,7 +114,7 @@ export const Story = () => {
           d&apos;Expo-Sciences, puis Alexandra et Danika au cégep entre 2014 et 2016.</i>
         </p>
 
-        <Carousel images={ carouselImages } />
+        <Carousel images={ carouselImages } autoPlay={ false } />
       </div>
     </Container>
   );

@@ -51,7 +51,7 @@ interface EventProps {
 function Event(props: Readonly<EventProps>) {
   return (
     <div className="flex items-end space-x-8">
-      <div className="flex-shrink-0 overflow-hidden w-24 h-24">
+      <div className="flex-shrink-0 overflow-hidden w-16 lg:w-24 h-16 lg:h-24">
         <Image
           src={props.image}
           width="96"
@@ -62,8 +62,8 @@ function Event(props: Readonly<EventProps>) {
         />
       </div>
       <div>
-        <div className="text-2xl font-medium">{props.name}</div>
-        <div className="text-xl text-gray-600">{props.title}</div>
+        <div className="text-xl lg:text-2xl font-medium">{props.name}</div>
+        <div className="lg:text-xl text-gray-600">{props.title}</div>
       </div>
     </div>
   );
