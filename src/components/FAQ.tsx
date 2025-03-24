@@ -53,8 +53,8 @@ const faqSections = [
         answer:
           "Bonne nouvelle : nous prenons soin de vos verres toute la soirée!  De fabuleux barmans s'occuperont de vous " + 
           "pendant le cocktail et jusqu'à 21h. Si le cœur vous en dit, un pourboire pour les remercier de leur talent sera " +
-          "toujours apprécié. Après 21h, le bar passe en mode <i>self-service</i>. Au menu : vin, cocktail, seltzer, mocktails " +
-          "(et sûrement quelques shotguns…). Cheers!",
+          "toujours apprécié. Après 21h, le bar demeurera ouvert, mais pessera en mode <i>self-service</i> pour le reste de la soirée. " +
+          "Au menu : vin, cocktail, seltzer, mocktails (et sûrement quelques shotguns…). Cheers!",
         image: barImg,
       },
       {
@@ -62,7 +62,7 @@ const faqSections = [
         answer:
           "Votre présence à nos côtés est déjà un merveilleux cadeau pour nous! Comme nous avons déjà tout ce qu'il nous faut " +
           "à la maison, nous n'avons pas de registre de cadeaux. Si vous le souhaitez, vous pouvez nous gâter avec une contribution " +
-          "à notre voyage de noces en Scandinavie. Un espace sera prévu à cet effet dans la salle de réception, ou vous pouvez faire un transfert au 819-923-3062.",
+          "à notre voyage de noces en Scandinavie. Un espace sera prévu à cet effet dans la salle de réception, ou vous pouvez faire un transfert au (819) 923-3062.",
         image: giftImg,
       },
     ],
@@ -88,12 +88,14 @@ const faqSections = [
       {
         question: "Que faut-il prévoir si nous dormons sur place?",
         answer:
-          "Vous prolongez la fête avec nous jusqu'au brunch du lendemain? Yeay! Les chambres sont offertes sans frais et sont équipées de literie et " +
-          "de serviettes, donc vous n'aurez besoin que de vos effets personnels. Si vous campez en tente, roulotte ou van, les salles " +
-          "de bains seront accessibles, mais veillez à apporter vos serviettes si vous souhaitez vous doucher. À votre arrivée, veuillez " +
-          "garder vos baggages dans votre voiture. Vous aurez suffisamment de temps après la cérémonie pour trouver votre chambre et vous " +
-          "y installer avant la réception.<br/><br/> <i>Pssst.. si jamais l'envie vous prenait de vous rafraîchir, une piscine creusée et des jacuzzis " +
-          "seront à votre disposition! N'oubliez pas de mettre votre maillot de bain dans votre valise!</i>",
+          "Vous prolongez la fête avec nous jusqu'au brunch du lendemain? Yeay! Les chambres sont offertes sans frais et sont équipées " +
+          "de literie et de serviettes, donc vous n'aurez besoin que de vos effets personnels. Notez cependant que les chambres ne sont " +
+          "pas climatisées et que les salles de bains sont communes. Si vous campez en tente, roulotte ou van, celles-ci vous seront " +
+          "accessibles, mais veillez à apporter votre serviette si vous souhaitez vous doucher. À votre arrivée, veuillez garder vos " +
+          "bagages dans votre voiture. Vous aurez suffisamment de temps après la cérémonie pour trouver votre chambre et vous y installer " +
+          "avant la réception.<br/><br/>" +
+          "<i>Pssst.. Si l'envie vous prenait de vous rafraîchir, une piscine creusée et des jacuzzis seront à votre disposition! N'oubliez " +
+          "pas de mettre votre maillot de bain et votre serviette de piscine dans votre valise!",
         image: overnightImg,
       },
     ],
