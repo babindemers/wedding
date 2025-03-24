@@ -95,7 +95,7 @@ const faqSections = [
           "bagages dans votre voiture. Vous aurez suffisamment de temps après la cérémonie pour trouver votre chambre et vous y installer " +
           "avant la réception.<br/><br/>" +
           "<i>Pssst.. Si l'envie vous prenait de vous rafraîchir, une piscine creusée et des jacuzzis seront à votre disposition! N'oubliez " +
-          "pas de mettre votre maillot de bain et votre serviette de piscine dans votre valise!",
+          "pas de mettre votre maillot de bain et votre serviette de piscine dans votre valise!</i>",
         image: overnightImg,
       },
     ],
